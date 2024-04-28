@@ -1,0 +1,48 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <OnIdiom x:Key="TestSizeAndroid" x:TypeArguments="x:Double">
+        <OnIdiom.Tablet>
+            <OnPlatform x:TypeArguments="x:Double">
+                <On Platform="iOS" Value="100" />
+                <On Platform="Default" Value="100" />
+            </OnPlatform>
+        </OnIdiom.Tablet>
+        <OnIdiom.Phone>
+            <OnPlatform x:TypeArguments="x:Double">
+                <On Platform="Android" Value="100" />
+            </OnPlatform>
+        </OnIdiom.Phone>
+        <OnIdiom.Desktop>
+            <OnPlatform x:TypeArguments="x:Double">
+                <On Platform="Android" Value="100" />
+            </OnPlatform>
+        </OnIdiom.Desktop>
+        <OnIdiom.Default>
+            <OnPlatform x:TypeArguments="x:Double">
+                <On Platform="Android" Value="100" />
+            </OnPlatform>
+        </OnIdiom.Default>
+    </OnIdiom>
+    <OnIdiom x:Key="TestSizeDefault" x:TypeArguments="x:Double">
+        <OnIdiom.Tablet>
+            <OnPlatform x:TypeArguments="x:Double">
+                <On Platform="iOS" Value="100" />
+                <On Platform="Default" Value="100" />
+            </OnPlatform>
+        </OnIdiom.Tablet>
+        <OnIdiom.Phone>
+            <OnPlatform x:TypeArguments="x:Double">
+                <On Platform="Default" Value="100" />
+            </OnPlatform>
+        </OnIdiom.Phone>
+        <OnIdiom.Desktop>
+            <OnPlatform x:TypeArguments="x:Double">
+                <On Platform="Default" Value="100" />
+            </OnPlatform>
+        </OnIdiom.Desktop>
+        <OnIdiom.Default>
+            <OnPlatform x:TypeArguments="x:Double">
+                <On Platform="Default" Value="100" />
+            </OnPlatform>
+        </OnIdiom.Default>
+    </OnIdiom>
+</ResourceDictionary>
